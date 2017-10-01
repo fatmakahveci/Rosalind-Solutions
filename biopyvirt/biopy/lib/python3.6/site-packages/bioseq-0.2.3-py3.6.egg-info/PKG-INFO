@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: bioseq
+Version: 0.2.3
+Summary: Bioseq is a lightweight Python package for handling nucleotide, protein, and codon sequences.
+Home-page: http://pypi.python.org/pypi/bioseq
+Author: Kent Kawashima
+Author-email: kentkawashima@gmail.com
+License: LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy

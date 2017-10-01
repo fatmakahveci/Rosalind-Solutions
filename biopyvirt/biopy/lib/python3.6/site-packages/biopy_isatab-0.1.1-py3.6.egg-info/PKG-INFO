@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: biopy-isatab
+Version: 0.1.1
+Summary: Python parser for ISAtab, a biological file format for experimental metadata
+Home-page: https://github.com/ISA-tools/biopy-isatab
+Author: Brad Chapman
+Author-email: chapmanb@50mail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
