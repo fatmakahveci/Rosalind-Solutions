@@ -1,0 +1,4 @@
+>text
+not maple simple apple
+>pattern
+pple

@@ -1,0 +1,4 @@
+>text
+GCATATAGATGC
+>pattern
+ATAGAT
