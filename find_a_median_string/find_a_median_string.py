@@ -4,6 +4,7 @@ import itertools
 
 file_name = 'find_a_median_string.txt'
 
+
 def hamming_distance(pattern1, pattern2):
     d = 0
     for i in range(len(pattern1)):
@@ -28,7 +29,7 @@ def median_string(sequences, k):
         for j in range(len(sequence) - k):
             seq = sequence[j:j + k]
             count[all_kmers.index(seq)] += 1
-        print
+
     print(all_kmers[count.index(max(count))])
 
 
