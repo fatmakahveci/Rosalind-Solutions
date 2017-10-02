@@ -1,16 +1,22 @@
 #!/bin/env/python
 
-import math,itertools,sys
+import math
+import itertools
+import sys
+
 
 def main():
-	variables=int(open('enumerating_gene_orders.txt','r').read().strip())
-	print math.factorial(variables)
-	for line in list(itertools.permutations(range(1,variables+1),variables)):
-		for i in xrange(variables):
-			sys.stdout.write(str(line[i]))
-			if i != variables:
-				sys.stdout.write(' ')
-		print ''
+    variables = int(open('enumerating_gene_orders.txt', 'r').read().strip())
+    print(math.factorial(variables))
+    
+    for line in list(itertools.permutations(range(1, variables + 1), variables)):
+        for i in range(variables):
+            sys.stdout.write(str(line[i]))
+            if i != variables:
+                sys.stdout.write(' ')
+        print('')
+
 
 if __name__ == '__main__':
-	main()
+    main()
+
