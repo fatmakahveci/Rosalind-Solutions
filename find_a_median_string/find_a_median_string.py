@@ -37,6 +37,7 @@ def median_string(sequences, k):
     best_distance = k
     for kmer in find_all_possible_kmers(k):
         d = total_distance(kmer, sequences,k)
+        print(kmer+' '+str(d))
         if d <= best_distance:
             best_distance = d
             best_pattern = kmer
@@ -46,7 +47,7 @@ def main():
     file_content = list(open(file_name, 'r').read().split('\n'))
     k = int(file_content[0])
     sequences = file_content[1:]
-    print(median_string(sequences, k))
+    print("best:"+median_string(sequences, k))
 
 
 if __name__ == '__main__':
