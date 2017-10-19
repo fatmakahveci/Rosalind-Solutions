@@ -10,7 +10,6 @@ class Trie(object):
         self.counter = count(start=1)
         self.root = [next(self.counter), {}]
 
-
 def write_result(parent):
     parents_child = parent[1]
     parents_parent = parent[0]
@@ -21,7 +20,7 @@ def write_result(parent):
 
 
 def main():
-    strings = open(file_name, 'r').read().split('\n')
+    strings = list(open(file_name, 'r').read().split('\n'))
     trie = Trie()
     for string in strings:
         node = trie.root
