@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec75e01d-1135-42bc-9db4-208b5c4aaac6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests-2.18.4.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests-2.18.4.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests-2.18.4.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests-2.18.4.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests-2.18.4.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests-2.18.4.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests-2.18.4.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/__version__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/_internal_utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/help.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/packages.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/setuptools-28.8.0-py3.6.egg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/easy-install.pth" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/easy-install.pth" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/bin/easy_install" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/bin/easy_install" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/bin/easy_install-3.6" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/bin/easy_install-3.6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/__init__.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/adapters.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/adapters.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/api.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/api.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/auth.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/auth.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/certs.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/certs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/compat.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/compat.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/cookies.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/cookies.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/exceptions.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/exceptions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/hooks.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/hooks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/models.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/sessions.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/sessions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/status_codes.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/status_codes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/structures.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/structures.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/utils.py" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/lib/python3.6/site-packages/requests/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../biopyvirt/biopy/pip-selfcheck.json" afterPath="$PROJECT_DIR$/../biopyvirt/biopy/pip-selfcheck.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../aho_corasick/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../aho_corasick/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +21,8 @@
       <file leaf-file-name="local_alignment_with_affine_gap_penalty.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+            <state relative-caret-position="0">
+              <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -62,7 +33,7 @@
       <file leaf-file-name="local_alignment_with_affine_gap_penalty.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="497">
               <caret line="253" column="22" lean-forward="false" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
               <folding />
             </state>
@@ -207,7 +178,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27825466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28540772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -244,14 +215,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blosum62.txt">
+    <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="3795">
+          <caret line="253" column="22" lean-forward="false" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3795">
+          <caret line="253" column="22" lean-forward="false" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blosum62.txt" />
     <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -386,27 +386,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blosum62.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/blosum62.txt" />
     <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/cs481_q3/smith_waterman.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/local_alignment_with_affine_gap_penalty.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="497">
           <caret line="253" column="22" lean-forward="false" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
           <folding />
         </state>
