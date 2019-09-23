@@ -1,13 +1,13 @@
 #!/bin/env/python
 
-from io import StringIO
+from StringIO import StringIO
 from Bio import SeqIO
 
-file_name = 'computing_gc_content.txt'
+file_name = 'rosalind_dna.txt'
 
 
 def computing_gc_content():
-    sequences = list(SeqIO.parse(StringIO(open(file_name, 'r').read()), "fasta"))
+    sequences = list(SeqIO.parse(StringIO(open('rosalind_dna.txt','r').read()), "fasta"))
 
     max_gc_content = 0
     max_gc_content_id = ''
