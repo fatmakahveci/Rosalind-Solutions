@@ -1,23 +1,9 @@
-#!/bin/env/python
-
-import sys
-
-
-def main():
-    seq = open('complementing_a_strand_of_dna.txt', 'r').read()
-    seq_size = len(seq)
-    for i in range(seq_size):
-        nucl = seq[seq_size - i - 1]
-        if nucl == 'A':
-            sys.stdout.write('T')
-        elif nucl == 'C':
-            sys.stdout.write('G')
-        elif nucl == 'G':
-            sys.stdout.write('C')
-        elif nucl == 'T':
-            sys.stdout.write('A')
-    print("")
-
+#!/usr/bin/env python3.7
 
 if __name__ == "__main__":
-    main()
+    with open("rosalind_dna.txt","r") as file:
+		sequence = file.readline()
+		complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
+		reverse_complement = "".join(complement.get(base) for base in reversed(sequence))
+		print(reverse_complement)
+		file.close()
