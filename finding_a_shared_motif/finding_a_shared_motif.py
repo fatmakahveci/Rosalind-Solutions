@@ -1,7 +1,7 @@
 #!/bin/env python
 
 from Bio import SeqIO
-from io import StringIO
+from StringIO import StringIO
 
 file_name = 'finding_a_shared_motif.txt'
 
@@ -25,7 +25,7 @@ def find_motif(sequences):
             if is_all_matched:
                 motif = first_sequence
                 break
-return (motif)
+    return motif
 
 
 def main():
