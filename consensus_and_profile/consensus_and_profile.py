@@ -2,7 +2,7 @@
 
 import sys
 from Bio import SeqIO
-from io import StringIO
+from StringIO import StringIO
 
 file_name = 'consensus_and_profile.txt'
 
