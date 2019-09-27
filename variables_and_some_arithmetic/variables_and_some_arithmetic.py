@@ -1,14 +1,12 @@
-#!/bin/env/python
+#!/usr/bin/env python3.7
 
-file_name = 'variables_and_some_arithmetic.txt'
-
-
-def main():
-    variables = open(file_name, 'r').read().split(' ')
-    a = float(variables[0])
-    b = float(variables[1])
-    print(str(int(a * a + b * b)))
+from math import sqrt
 
 
 if __name__ == "__main__":
-    main()
+
+	with open("rosalind.txt", "r") as file:
+		m, n = map(int, file.readline().split(' '))
+		print(str(m**2+n**2))
+
+		file.close()
