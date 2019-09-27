@@ -1,33 +1,24 @@
-#!/bin/env/python
+#!/usr/bin/env python3.7
 
-from Bio import SeqIO
+if __name__ == "__main__":
 
-file_name = 'locating_restriction_sites.txt'
+	with open("rosalind.txt", "r") as file:
 
+		file.readline()
+		sequence = str(''.join(file.readlines())).replace('\n','')
+		print(sequence)
+		complements = {'A':'T', 'T':'A', 'G':'C', 'C':'G'}
+		n = len(sequence)
 
-def find_reverse_complement(sequence):
-    dict = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
-    for i in range(len(sequence)):
-        sequence = sequence[:i] + dict.get(sequence[i]) + sequence[i + 1:]
-    return sequence[::-1]
+		for start in range(n):
+			for k in range(4,13): # k := k-mer length
+				if start + k > n:
+					continue
+				first_sequence = sequence[start:start+k]
+				# reverse complement
+				second_sequence = ''.join([complements[base] for base in first_sequence[::-1]])
 
+				if first_sequence == second_sequence:
+					print(' '.join(map(str, [start + 1, k])))
 
-def divide_into_kmers(sequence, k):
-    k_mer_list = []
-    for i in range(len(sequence) - k + 1):
-        k_mer_list.append(sequence[i:i + k])
-    return k_mer_list
-
-
-def main():
-    sequence = str(list(SeqIO.parse(file_name, 'fasta'))[0].seq)
-    for k in range(4, 13):
-        k_mer_list = divide_into_kmers(sequence, k)
-        for index, k_mer in enumerate(k_mer_list):
-            reverse_k_mer = find_reverse_complement(k_mer)
-            if k_mer == reverse_k_mer:
-                print(index+1, k)
-
-
-if __name__ == '__main__':
-    main()
+		file.close()
