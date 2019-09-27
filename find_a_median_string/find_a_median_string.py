@@ -1,54 +1,42 @@
-#!/bin/env/python
+#!/usr/bin/env python3.7
 
-import itertools
-import sys
-
-file_name = 'find_a_median_string.txt'
+from sys import maxsize
+from itertools import product
 
 
-def find_all_possible_kmers(k):
-    nucleotides = ['A', 'C', 'G', 'T']
-    nucleotide_combinations = list(itertools.product(nucleotides, repeat=k))
-    for i in range(len(nucleotide_combinations)):
-        nucleotide_combinations[i] = ''.join(nucleotide_combinations[i])
-    return nucleotide_combinations
+def find_all_possible_kmers():
+	return [''.join(c) for c in product(['A', 'C', 'G', 'T'], repeat=k)]
 
+def hamming_dist(seq1, seq2):
+	return len(list(filter(lambda base: base[0] != base[1], zip(seq1, seq2))))
 
-def hamming_distance(pattern1, pattern2):
-    d = 0
-    for i in range(len(pattern1)):
-        if pattern1[i] != pattern2[i]:
-            d += 1
-    return d
+def total_dist(pattern, seq_list):
+	dist = 0
+	for seq in seq_list:
+		min_hamming_dist = maxsize
+		last_k_mer_idx = len(seq) - k + 1
 
+		for i in range(last_k_mer_idx):
+			min_hamming_dist = min(min_hamming_dist, hamming_dist(pattern, seq[i:i + k]))
+		dist += min_hamming_dist
+	return dist
 
-def total_distance(pattern, sequences,k):
-    distance = 0
-    for sequence in sequences:
-        min_hamming = sys.maxsize
-        for i in range(len(sequence) - k + 1):
-            min_hamming = min(min_hamming, hamming_distance(pattern, sequence[i:i + k]))
-        distance += min_hamming
-    return distance
+def find_median_string(seq_list):
+	median_string = 'A' * k
+	median_string_dist = k
+	for k_mer in find_all_possible_kmers():
+		d = total_dist(k_mer, seq_list)
+		if d <= median_string_dist:
+			median_string_dist = d
+			median_string = k_mer
 
+	return median_string
 
-def median_string(sequences, k):
-    best_pattern = sequences[0][:k]
-    best_distance = k
-    for kmer in find_all_possible_kmers(k):
-        d = total_distance(kmer, sequences,k)
-        print(kmer+' '+str(d))
-        if d <= best_distance:
-            best_distance = d
-            best_pattern = kmer
-    return best_pattern
+if __name__ == "__main__":
 
-def main():
-    file_content = list(open(file_name, 'r').read().split('\n'))
-    k = int(file_content[0])
-    sequences = file_content[1:]
-    print("best:"+median_string(sequences, k))
+	with open("rosalind.txt", "r") as file:
+		k = int(file.readline())
 
+		print(find_median_string(file.readlines()))
 
-if __name__ == '__main__':
-    main()
+		file.close()
