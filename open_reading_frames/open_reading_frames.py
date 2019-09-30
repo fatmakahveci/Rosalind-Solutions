@@ -1,10 +1,7 @@
-#!/bin/env/python
+#!/bin/env/python3.7
 
 from Bio.Seq import Seq
 from Bio import SeqIO
-from io import StringIO
-
-file_name = 'open_reading_frames.txt'
 
 
 def translate_codon(codon):
@@ -12,11 +9,6 @@ def translate_codon(codon):
         return str(Seq(codon).translate())
     else:
         return None
-
-
-def reverse_complement(dna):
-    return str(Seq(dna).reverse_complement())
-
 
 def orf(sequence):
     orfs = []
@@ -39,16 +31,12 @@ def orf(sequence):
     return orfs
 
 
-def main():
-    rna_sequence = str(list(SeqIO.parse(StringIO(open(file_name, 'r').read()), 'fasta'))[0].seq)
+if __name__ == "__main__":
+    rna_sequence = str(list(SeqIO.parse("rosalind.txt", 'fasta'))[0].seq)
 
     rna_orf = orf(rna_sequence)
-    reverse_rna_orf = orf(reverse_complement(rna_sequence))
+    reverse_rna_orf = orf(str(Seq(rna_sequence).reverse_complement()))
 
     orf_set = set(rna_orf + reverse_rna_orf)
 
     print('\n'.join(orf_set))
-
-
-if __name__ == "__main__":
-    main()
