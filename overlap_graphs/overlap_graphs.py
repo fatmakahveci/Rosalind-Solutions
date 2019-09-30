@@ -1,13 +1,12 @@
-#!/bin/env python
+#!/bin/env python3.7
 
 import itertools
 
 from Bio import SeqIO
-from io import StringIO
 
 
-def overlap_graphs(file_name):
-    sequences = list(SeqIO.parse(StringIO(open(file_name, 'r').read()), 'fasta'))
+if __name__ == "__main__":
+    sequences = list(SeqIO.parse("rosalind.txt", 'fasta'))
 
     id_list = []
     seq_list = []
@@ -19,11 +18,3 @@ def overlap_graphs(file_name):
     for i, j in itertools.permutations(range(len(seq_list)), 2):
         if seq_list[i][-3:] == seq_list[j][:3]:
             print(id_list[i] + ' ' + id_list[j])
-
-
-def main():
-    overlap_graphs('overlap_graphs.txt')
-
-
-if __name__ == '__main__':
-    main()
