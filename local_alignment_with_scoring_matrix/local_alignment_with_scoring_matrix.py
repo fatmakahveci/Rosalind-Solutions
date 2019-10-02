@@ -8,7 +8,9 @@ from numpy import zeros, where
 file_name = 'local_alignment_with_scoring_matrix.txt'
 
 
-def find_alignment_matrix(seq1, seq2, m, n, gap_penalty):
+def find_alignment_matrix():
+    m, n = len(seq1), len(seq2)
+
     alignment_matrix = zeros((m + 1, n + 1))
     path_matrix = zeros((m + 1, n + 1))
 
@@ -43,9 +45,8 @@ def find_alignment_matrix(seq1, seq2, m, n, gap_penalty):
     return alignment_matrix, path_matrix
 
 
-def trace_back(path_matrix, max_i, max_j, seq1, seq2):
-    i, j = max_i, max_j
-
+def trace_back():
+    i, j = max_index_i_j[0][0], max_index_i_j[1][0]
     edited_seq1 = seq1[:i]
     edited_seq2 = seq2[:j]
 
@@ -63,23 +64,15 @@ def trace_back(path_matrix, max_i, max_j, seq1, seq2):
     print(edited_seq2[j:])
 
 
-def main():
-    sequences = list(SeqIO.parse(file_name, 'fasta'))
-
-    seq1 = sequences[0].seq
-    seq2 = sequences[1].seq
+if __name__ == '__main__':
+    seq1, seq2 = map(lambda x : str(x.seq),list(SeqIO.parse("rosalind.txt", 'fasta')))
 
     gap_penalty = 5
 
-    alignment_matrix = find_alignment_matrix(seq1, seq2, len(seq1), len(seq2), gap_penalty)[0]
-    path_matrix = find_alignment_matrix(seq1, seq2, len(seq1), len(seq2), gap_penalty)[1]
+    alignment_matrix = find_alignment_matrix()[0]
+    path_matrix = find_alignment_matrix()[1]
     print(int(alignment_matrix.max()))
 
     max_index_i_j = where(alignment_matrix == alignment_matrix.max())
-    i, j = int(max_index_i_j[0]), int(max_index_i_j[1])
 
-    trace_back(path_matrix, i, j, seq1, seq2)
-
-
-if __name__ == '__main__':
-    main()
+    trace_back()
