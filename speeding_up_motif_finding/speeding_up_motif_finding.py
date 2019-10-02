@@ -1,16 +1,13 @@
-#!/bin/env/python
+#!/usr/bin/env python3.7
 
 from Bio import SeqIO
-from io import StringIO
-
-file_name = 'speeding_up_motif_finding.txt'
 
 
-def failure_function(pattern):
+if __name__ == '__main__':
+    pattern = str(list(SeqIO.parse("rosalind.txt", 'fasta'))[0].seq)
     m = len(pattern)
     failure = [0] * m
-    i = 1
-    j = 0
+    i, j = 1, 0
 
     while i < m:
         if pattern[i] == pattern[j]:
@@ -22,13 +19,4 @@ def failure_function(pattern):
         else:
             failure[i] = 0
             i += 1
-    return failure
-
-
-def main():
-    pattern = list(SeqIO.parse(StringIO(open(file_name, 'r').read()), 'fasta'))[0].seq
-    print(failure_function(pattern))
-
-
-if __name__ == '__main__':
-    main()
+    print(' '.join(map(str, failure)))
