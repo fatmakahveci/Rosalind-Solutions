@@ -6,10 +6,6 @@ from numpy import zeros
 from itertools import product
 from sys import setrecursionlimit
 
-file_name = 'global_alignment_with_constant_gap_penalty.txt'
-
-gap_penalty = -5
-
 
 def blosum_score(seq1, seq2, i, j):
     cost = blosum62.get((seq1[i], seq2[j]))
@@ -52,15 +48,10 @@ def find_alignment_matrix(seq1, seq2, m, n):
     return calculate_alignment_score(seq1, seq2, m - 1, n - 1, 0, 0, alignment_matrix)
 
 
-def main():
+if __name__ == '__main__':
     setrecursionlimit(10000)
-    sequences = list(SeqIO.parse(file_name, 'fasta'))
+    gap_penalty = -5
 
-    seq1 = sequences[0].seq
-    seq2 = sequences[1].seq
+    seq1, seq2 = map(lambda x : str(x.seq), list(SeqIO.parse("rosalind.txt", 'fasta')))
 
     print(find_alignment_matrix(seq1, seq2, len(seq1), len(seq2)))
-
-
-if __name__ == '__main__':
-    main()
