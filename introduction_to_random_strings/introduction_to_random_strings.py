@@ -1,24 +1,20 @@
-#!/bin/env/python
+#!/usr/bin/env/ python3.7
 
 import math
 
-file_name='introduction_to_random_strings.txt'
-
-def main():
-    file_content=open(file_name,'r').read().split('\n')
-
-    sequence=file_content[0]
-    gc_contents=list(map(float,file_content[1].strip().split(' ')))
-
-    for gc_content in gc_contents:
-        probability = 0.0
-        for base in sequence:
-            if base == 'G' or base == 'C':
-                probability+=math.log(gc_content/2.0,10)
-            else:
-                probability+=math.log((1.0-gc_content)/2.0,10)
-
-        print('{0: 0.3f}'.format(probability))
-
 if __name__=="__main__":
-    main()
+
+    with open("rosalind.txt", 'r') as file:
+        seq = file.readline().strip() # seq := sequence
+        gc_pr_list = list(map(float, file.readline().strip('\n').split(' ')))
+        file.close()
+
+    pr_list = [] # pr := probability
+    n_gc = seq.count('G') + seq.count('C')
+    n_at = len(seq) - n_gc
+    for gc_pr in gc_pr_list: 
+        prob = math.log10((((1 - gc_pr) / 2)**n_at) * (gc_pr / 2)**n_gc)
+        pr_list.append('%0.3f' % prob)
+
+    pr_list = map(str, pr_list)
+    print(' '.join(pr_list))
