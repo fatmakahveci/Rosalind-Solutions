@@ -1,9 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.7
 
 from Bio import SeqIO
 from numpy import zeros
-
-file_name = 'edit_distance_alignment.txt'
 
 
 def indel(sequence, i):
@@ -51,16 +49,9 @@ def edit_alignment(seq1, seq2):
     return edited_seq1, edited_seq2
 
 
-def main():
-    sequences = list(SeqIO.parse(file_name, 'fasta'))
-
-    seq1 = sequences[0].seq
-    seq2 = sequences[1].seq
+if __name__ == '__main__':
+    seq1, seq2 = map(lambda x: str(x.seq), list(SeqIO.parse("rosalind.txt", 'fasta')))
 
     edited_sequences = edit_alignment(seq1, seq2)
     print(edited_sequences[0])
     print(edited_sequences[1])
-
-
-if __name__ == '__main__':
-    main()
