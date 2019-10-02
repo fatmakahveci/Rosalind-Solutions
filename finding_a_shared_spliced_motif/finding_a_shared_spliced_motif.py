@@ -1,14 +1,12 @@
-#!/bin/env/python
+#!/usr/bin/env python3.7
 
 from Bio import SeqIO
 
 import numpy
 
-file_name = 'finding_a_shared_spliced_motif.txt'
 
-
-def main():
-    sequences = list(SeqIO.parse(file_name, 'fasta'))
+if __name__ == '__main__':
+    sequences = list(SeqIO.parse("rosalind.txt", 'fasta'))
 
     seq1 = sequences[0].seq
     seq2 = sequences[1].seq
@@ -48,7 +46,3 @@ def main():
     for i in range(len(lcs) - 1, -1, -1):
         ordered_lcs.append(lcs[i])
     print(''.join(ordered_lcs))
-
-
-if __name__ == '__main__':
-    main()
