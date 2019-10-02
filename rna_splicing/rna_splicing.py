@@ -1,14 +1,12 @@
-#!/bin/env/python
+#!/usr/bin/env python3.7
 
 from Bio.Seq import Seq
 from Bio.Alphabet import generic_dna
 from Bio import SeqIO
-from io import StringIO
 
-file_name='rna_splicing.txt'
 
-def main():
-    sequences = list(SeqIO.parse(StringIO(open(file_name, 'r').read().strip()), 'fasta'))
+if __name__ == '__main__':
+    sequences = list(SeqIO.parse("rosalind.txt", 'fasta'))
 
     dna_sequence = str(sequences[0].seq)
     introns = []
@@ -19,7 +17,3 @@ def main():
     coding_dna = Seq(dna_sequence, generic_dna)
     translated_dna = coding_dna.translate(to_stop=True)
     print(str(translated_dna))
-
-
-if __name__ == '__main__':
-    main()
