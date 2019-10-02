@@ -1,9 +1,7 @@
-#!/bin/env/python
+#!/usr/bin/env python3.7
 
 from Bio import SeqIO
 from Bio.SubsMat.MatrixInfo import blosum62
-
-file_name = 'global_alignment_with_scoring_matrix.txt'
 
 
 def get_max_alignment(seq1, seq2, gap_penalty):
@@ -33,16 +31,9 @@ def get_max_alignment(seq1, seq2, gap_penalty):
     return alignment_matrix[(i, j)][0]
 
 
-def main():
-    sequences = list(SeqIO.parse(file_name, 'fasta'))
-
-    seq1 = sequences[0]
-    seq2 = sequences[1]
+if __name__ == '__main__':
+    seq1, seq2 = map(lambda x : str(x.seq), list(SeqIO.parse("rosalind.txt", 'fasta')))
 
     gap_penalty = 5
 
     print(get_max_alignment(seq1, seq2, gap_penalty))
-
-
-if __name__ == '__main__':
-    main()
