@@ -1,8 +1,6 @@
-#!/bin/env/python
+#!/usr/bin/env python3.7
 
 from Bio import SeqIO
-
-file_name = 'edit_distance.txt'
 
 
 def calculate_edit_distance(seq1, seq2):
@@ -26,14 +24,7 @@ def calculate_edit_distance(seq1, seq2):
     return edit_distance_matrix[m][n]
 
 
-def main():
-    sequences = list(SeqIO.parse(file_name, 'fasta'))
-
-    seq1 = sequences[1].seq
-    seq2 = sequences[0].seq
+if __name__ == '__main__':
+    seq1, seq2 = map(lambda x: str(x.seq), list(SeqIO.parse("rosalind.txt", 'fasta')))
 
     print(calculate_edit_distance(seq1, seq2))
-
-
-if __name__ == '__main__':
-    main()
