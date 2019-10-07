@@ -1,10 +1,6 @@
 #!/bin/env/python
 
 from Bio import SeqIO
-from io import StringIO
-
-file_name = 'kmp.txt'
-
 
 def failure_function(pattern):
     m = len(pattern)
@@ -48,14 +44,10 @@ def kmp(text, pattern):
     return -1
 
 
-def main():
-    text = list(SeqIO.parse(StringIO(open(file_name, 'r').read()), 'fasta'))[0].seq
-    pattern = list(SeqIO.parse(StringIO(open(file_name, 'r').read()), 'fasta'))[1].seq
+if __name__ == '__main__':
+    text = list(SeqIO.parse('text.fa', 'fasta'))[0].seq
+    pattern = list(SeqIO.parse('pattern.fa', 'fasta'))[0].seq
+
     index = kmp(text, pattern)
     print('Index: ' + str(index))
     print('Matching text: ' + text[index:index + len(pattern)])
-
-
-if __name__ == '__main__':
-    main()
-
