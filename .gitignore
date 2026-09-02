@@ -1,0 +1,43 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
