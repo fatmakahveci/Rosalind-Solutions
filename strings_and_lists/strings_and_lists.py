@@ -7,5 +7,3 @@ if __name__ == "__main__":
 		a, b, c, d = map(int, file.readline().split(' '))
 
 		print(string[a:b+1]+' '+string[c:d+1])
-
-		file.close()

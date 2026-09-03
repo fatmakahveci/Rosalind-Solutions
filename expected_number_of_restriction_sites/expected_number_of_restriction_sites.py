@@ -6,7 +6,6 @@ if __name__ == '__main__':
         N = int(file.readline().strip('\n'))
         seq = file.readline().strip('\n')
         A = map(float, file.readline().strip('\n').split(' '))
-        file.close()
 
     n_gc = seq.count('G') + seq.count('C')
     n_at = seq.count('A') + seq.count('T')

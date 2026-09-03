@@ -5,7 +5,6 @@ if __name__ == '__main__':
     with open("rosalind.txt", 'r') as file:
         N, x = map(float, file.readline().strip('\n').split(' '))
         seq = file.readline().strip('\n')
-        file.close()
     n_at = seq.count('A') + seq.count('T')
     n_gc = len(seq) - n_at
 

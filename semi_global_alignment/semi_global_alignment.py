@@ -2,7 +2,7 @@
 
 from Bio import SeqIO
 from itertools import product
-from numpy import zeros, where
+from numpy import zeros
 
 file_name = 'semi_global_alignment.txt'
 

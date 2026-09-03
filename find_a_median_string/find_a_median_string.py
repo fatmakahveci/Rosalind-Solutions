@@ -38,5 +38,3 @@ if __name__ == "__main__":
 		k = int(file.readline())
 
 		print(find_median_string(file.readlines()))
-
-		file.close()

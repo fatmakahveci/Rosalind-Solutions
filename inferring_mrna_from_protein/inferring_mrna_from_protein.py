@@ -5,7 +5,6 @@ if __name__ == '__main__':
 
 	with open("rna_codon_table.txt", 'r') as file:
 		item_list = file.read().split()
-		file.close()
 	
 	rna_codon_dict = {}
 	i = 0

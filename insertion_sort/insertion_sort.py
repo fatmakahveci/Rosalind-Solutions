@@ -22,5 +22,3 @@ if __name__ == "__main__":
 		arr = map(int, file.readline().split(' '))
 
 		print(str(insertion_sort_swap(arr)))
-
-		file.close()

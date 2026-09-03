@@ -6,7 +6,6 @@ import itertools
 if __name__ == "__main__":
     with open("rosalind.txt", 'r') as file:
         n = int(file.readline().strip('\n'))
-        file.close()
 
     permutations = []
     nr = 0

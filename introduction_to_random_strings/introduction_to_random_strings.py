@@ -7,7 +7,6 @@ if __name__=="__main__":
     with open("rosalind.txt", 'r') as file:
         seq = file.readline().strip() # seq := sequence
         gc_pr_list = list(map(float, file.readline().strip('\n').split(' ')))
-        file.close()
 
     pr_list = [] # pr := probability
     n_gc = seq.count('G') + seq.count('C')

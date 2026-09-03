@@ -8,5 +8,4 @@ def dominant_probability(dom, het, rec):
 if __name__ == '__main__':
 	with open("rosalind.txt", 'r') as file:
 		dom, het, rec = map(float, file.readline().split(' '))
-		file.close()
 	print("%.5f" % dominant_probability(dom, het, rec))

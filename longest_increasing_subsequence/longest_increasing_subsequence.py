@@ -29,7 +29,6 @@ if __name__ == "__main__":
         n = int(file.readline().strip())
         lds_array = map(int, file.readline().strip().split(' '))
         
-        file.close()
         
         print(' '.join(map(str,longest_increasing_subsequence(lds_array, n))))
         print(' '.join(map(str,longest_increasing_subsequence(lds_array[::-1], n)[::-1])))

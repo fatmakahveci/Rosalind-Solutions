@@ -20,5 +20,3 @@ if __name__ == "__main__":
 
 				if first_sequence == second_sequence:
 					print(' '.join(map(str, [start + 1, k])))
-
-		file.close()

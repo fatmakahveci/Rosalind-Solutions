@@ -12,4 +12,3 @@ if __name__ == "__main__":
 	with open("rosalind.txt", 'r') as file:
 		n = int(str(file.read()).strip())
 		print(fibonacci(n))
-		file.close()
