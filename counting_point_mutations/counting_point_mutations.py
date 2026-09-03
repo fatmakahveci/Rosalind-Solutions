@@ -4,7 +4,8 @@ file_name = 'counting_point_mutations.txt'
 
 
 def readfile():
-    return open(file_name, 'r').read()
+    with open(file_name, 'r') as input_file:
+        return input_file.read()
 
 
 def get_sequences():
@@ -29,4 +30,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
